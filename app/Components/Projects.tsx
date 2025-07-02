@@ -61,7 +61,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'HTML CSS and JS Live Code Editor',
-      description: 'A live code editor built using Vanilla HTML, JavaScript, and Tailwind CSS, allowing real-time preview of web development code \n UNDER MAINTAINENCE.,
+      description: 'A live code editor built using Vanilla HTML, JavaScript, and Tailwind CSS, allowing real-time preview of web development code \n UNDER MAINTAINENC'.,
       technologies: ['html', 'css', 'javascript', 'tailwind'],
       
       liveLink: 'https://github.com',
