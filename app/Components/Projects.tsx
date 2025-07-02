@@ -49,14 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technolog
             Live Demo
             </a>
         )}
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`flex-1 inline-block bg-blue-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 text-center text-lg ${!liveLink ? 'w-full' : ''}`} // Increased padding and font size
-        >
-          View Live
-        </a>
+       
       </div>
     </div>
   );
@@ -71,15 +64,14 @@ const Projects = () => {
       title: 'HTML CSS and JS Live Code Editor',
       description: 'A live code editor built using Vanilla HTML, JavaScript, and Tailwind CSS, allowing real-time preview of web development code.',
       technologies: ['html', 'css', 'javascript', 'tailwind'],
-      githubLink: 'https://github.com/yourusername/html-css-js-live-editor',
-      liveLink: 'https://your-live-editor-demo.com',
+      
+      liveLink: 'https://ukesh-dhakal.github.io/LivecodeEditor-For-HTML-CSS-and-JS/',
     },
     {
       id: 2,
       title: 'Event Management System',
       description: 'A full-stack web application for event management, developed with React, Tailwind CSS, Node.js, and MongoDB.',
       technologies: ['react', 'tailwind', 'nodejs', 'mongodb'],
-      githubLink: 'https://github.com/yourusername/event-management-system',
       liveLink: 'https://your-event-management-demo.com',
     },
     {
@@ -87,8 +79,8 @@ const Projects = () => {
       title: 'E-commerce Site Made for a Hackathon',
       description: 'An e-commerce site developed for a hackathon using vanilla HTML, JavaScript, and MySQL.',
       technologies: ['html', 'javascript', 'mysql'],
-      githubLink: 'https://github.com/yourusername/hackathon-ecommerce',
-      liveLink: 'https://your-ecommerce-demo.com',
+      
+      liveLink: 'https://ecomart-hackathon.netlify.app/',
     },
   ];
 
@@ -106,7 +98,6 @@ const Projects = () => {
             title={project.title}
             description={project.description}
             technologies={project.technologies}
-            githubLink={project.githubLink}
             liveLink={project.liveLink}
           />
         ))}
