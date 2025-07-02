@@ -20,7 +20,6 @@ interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
-  githubLink: string;
   liveLink: string;
 }
 
